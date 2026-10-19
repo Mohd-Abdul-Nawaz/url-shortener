@@ -1,0 +1,10 @@
+github.com/cespare/xxhash/v2 v2.2.0 h1:B8ZyS1CAGSLNquywSpLt8ABNPCemFXhEc0UhFD1H2gU=
+github.com/go-redis/redis/v7 v7.3.0 h1:Dh5RMal7eSU+y7nYFhfGRHmOAWFl3eRQU4T9OCzJZLM=
+github.com/go-redis/redis/v8 v8.11.5 h1:FRcdZV5Fz+hjSOLtPJRUo1eJb88h0iKuHsmlBz/Vu3I=
+github.com/google/uuid v1.6.0 h1:NI0MzJrQf8Y+QdV5nTxY8OeLVxgNZk67X2z7YL1h5XM=
+github.com/joho/godotenv v1.5.1 h1:ZSmzXtIZ8RtSP50vdaIWWPN+fddR7tJQeg+3JmTvXHc=
+golang.org/x/crypto v0.21.0 h1:ZX1n93YtZ7+CKWOR1iXgk+Aqy8NQMvkjhuDmTc2uh0I=
+golang.org/x/net v0.24.0 h1:11ozNMlxRQa/ZF1PcwDlOVSw6+3wRo9BPM9eXEcP9zI=
+golang.org/x/sync v0.6.0 h1:SqyTazS0Aig3Yoh7LukRbNwpxzSsuvZNH5d+CME7snU=
+golang.org/x/sys v0.19.0 h1:q9I3eWr5zVr7ZH0kob7hC0qg6g+gRY5hNAijOhAWHMA=
+golang.org/x/time v0.5.0 h1:iRmEdYQoeyG2SjqtO7gUQM9GJoV1FXo7V2L4hpEtHCU=

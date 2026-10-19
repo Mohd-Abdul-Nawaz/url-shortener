@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  UrlShortenerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: bin/bootstrap
+      Runtime: provided.al2023
+      MemorySize: 128
+      Timeout: 30
+      Environment:
+        Variables:
+          REDIS_ADDR: !GetAtt RedisCluster.PrimaryEndpoint.Address
+      Events:
+        ShortenAPI:
+          Type: Api
+          Properties:
+            Path: /shorten
+            Method: POST
+        RedirectAPI:
+          Type: Api
+          Properties:
+            Path: /{alias}
+            Method: GET
+
+  RedisCluster:
+    Type: AWS::ElastiCache::ReplicationGroup
+    Properties:
+      ReplicationGroupDescription: "URL shortener Redis cache"
+      AutomaticFailoverEnabled: false
+      NumCacheClusters: 1
+      CacheNodeType: cache.t3.micro
+      Engine: redis
